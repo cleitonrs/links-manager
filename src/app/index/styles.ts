@@ -14,12 +14,21 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
     width: "100%",
     flexDirection: "row",
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     marginBottom: 32,
   },
   logo: {
     height: 32,
     width: 38,
   },
-})
+  links: {
+    borderTopWidth: 1,
+    borderTopColor: colors.gray[100],
+  },
+  linksContent: {
+    gap: 20,
+    padding: 24,
+    paddingBottom: 100,
+  },
+});
