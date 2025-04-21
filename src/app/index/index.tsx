@@ -1,7 +1,10 @@
 import { View, Image, TouchableOpacity } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
+
 import { styles } from "./styles"
 import { colors } from "@/styles/colors"
+
+import { Link } from "@/components/link"
 import { Categories } from "@/components/categories"
 
 export default function Index() {
@@ -16,6 +19,12 @@ export default function Index() {
       </View>
 
       <Categories />
+
+      <Link
+        name="Cleiton Github"
+        url="https://www.github.com/cleitonrs/"
+        onDetails={() => console.log("Clicou!")}
+      />
     </View>
   )
 }
