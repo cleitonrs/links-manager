@@ -24,8 +24,9 @@ export default function Add() {
 
       if (!url.trim()) return Alert.alert("URL", "Informe a URL")
 
+
       await linkStorage.save({
-        id: new Date().getTime.toString(),
+        id: new Date().getTime().toString(),
         name,
         url,
         category,

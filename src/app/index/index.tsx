@@ -34,6 +34,16 @@ export default function Index() {
     setLink(selected)
   }
 
+  async function handleOpen() {
+    try {
+      await Linking.openURL(link.url)
+      setShowModal(true)
+    } catch (error) {
+      Alert.alert('Link', "Não foi possível abrir o link")
+      console.log(error)
+    }
+  }
+
   async function linkRemove() {
     try {
       await linkStorage.remove(link.id)
@@ -41,16 +51,6 @@ export default function Index() {
       setShowModal(false)
     } catch (error) {
       Alert.alert("Erro", "Não foi possível excluir")
-      console.log(error)
-    }
-  }
-
-  async function handleOpen() {
-    try {
-      await Linking.openURL(link.url)
-      setShowModal(true)
-    } catch (error) {
-      Alert.alert('Link', "Não foi possível abrir o link")
       console.log(error)
     }
   }
