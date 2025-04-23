@@ -16,7 +16,7 @@ export function Option({ name, icon, variant = "primary", ...rest }: Props) {
       <MaterialIcons
         name={icon}
         size={20}
-        color={variant === "primary" ? colors.green[300] : colors.gray[400]}
+        color={variant === "primary" ? colors.blue[300] : colors.gray[400]}
       />
 
       <Text

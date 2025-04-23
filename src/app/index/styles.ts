@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     paddingTop: 20,
   },
   title: {
-    color: colors.green[900],
+    color: colors.blue[900],
     fontSize: 22,
   },
   header: {
