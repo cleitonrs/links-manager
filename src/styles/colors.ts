@@ -13,6 +13,6 @@ export const colors = {
 
   blue: {
     300: "#6BBEF9",
-    900: "#2196F3",
+    900: "#1c398e",
   },
 }
